@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Detail Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="main-grid">
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="course-header">
+          <div class="course-info">
+            <h1 id="courseTitle">Complete React Development Course</h1>
+            <div class="course-meta">
+              <span class="meta-item">
+                <i data-lucide="book-open"></i>
+                <span id="courseLevel">Intermediate</span>
+              </span>
+              <span class="meta-item">
+                <i data-lucide="clock"></i>
+                <span id="courseDuration">12 hours</span>
+              </span>
+              <span class="meta-item">
+                <i data-lucide="video"></i>
+                <span id="totalVideos">45 videos</span>
+              </span>
+              <span class="meta-item">
+                <i data-lucide="star" class="star-icon"></i>
+                <span id="courseRating">4.8</span>
+              </span>
+            </div>
+          </div>
+          <button id="enrollButton" class="enroll-button">Enroll Now</button>
+        </div>
+
+        <div class="progress-section">
+          <div class="progress-header">
+            <span>Course Progress</span>
+            <span id="progressPercentage">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="video-player">
+          <iframe
+            id="youtubePlayer"
+            src="https://www.youtube.com/embed/w7ejDZ8SWv8"
+            title="Course Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="ai-questions-section">
+          <h2>Test Your Learning</h2>
+          <button id="generateQuestionsButton" class="generate-questions-button">Take Assessment to test your knowledge</button>
+          <div id="questionsList" class="questions-list"></div>
+        </div>
+        <div class="summarize-section">
+          <h2>Course Summary</h2>
+          <div class="summary-card">
+            <p id="courseSummary">This React Development Course will guide you through React fundamentals, hooks, and advanced concepts to help you build scalable web applications.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime assumenda iure, tempore voluptates, debitis ipsam quas, odit porro nulla soluta quaerat commodi harum.
+            </p>
+            <button id="generateSummaryButton" class="generate-summary-button">
+              <i data-lucide="refresh-cw"></i> Generate Summary
+            </button>
+          </div>
+        </div>
+        <div class="notes-section">
+          <h2>Notes</h2>
+          <!-- Formatting Toolbar -->
+          <div class="formatting-toolbar">
+            <button type="button" id="boldButton" class="format-button" title="Bold">
+              <b>B</b>
+            </button>
+            <button type="button" id="italicButton" class="format-button" title="Italic">
+              <i>I</i>
+            </button>
+            <button type="button" id="underlineButton" class="format-button" title="Underline">
+              <u>U</u>
+            </button>
+          </div>
+          <form id="noteForm" class="note-form">
+            <div contenteditable="true" id="noteInput" class="note-input" placeholder="Add a note..."></div>
+            <button type="submit">
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+          <div id="notesList" class="notes-list"></div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="video-list-section">
+          <h2>Course Content</h2>
+          <div id="videoList" class="video-list"></div>
+        </div>
+        <div class="rating-section">
+          <h2>Give Rating</h2>
+          <p>Rate this course:</p>
+          <div id="starRating" class="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <div id="ratingValue" class="rating-value">0/5</div>
+          <button id="submitRatingButton" class="submit-rating-button">Submit Rating</button>
+        </div>
+        <div class="notifications-section">
+          <h2>Job Notifications</h2>
+          <div id="notificationsList" class="notifications-list">
+            <!-- Sample Notification -->
+            <div class="notification-item">
+              <div class="notification-message">New job opening: Frontend Developer at XYZ Corp!</div>
+              <button class="dismiss-button">Dismiss</button>
+            </div>
+            <!-- More notifications will be appended here -->
+          </div>
+        </div>
+ <!-- Discussion Section -->
+ <div class="discussion-section">
+  <div class="discussion-header">Discussion</div>
+  <div id="discussionList" class="discussion-list">
+    <!-- Sample Discussion Item -->
+    <div class="discussion-item">
+      <div class="author">John Doe</div>
+      <div class="message">This course is amazing! I love how easy the concepts are explained.</div>
+    </div>
+    <!-- More discussions will be appended here -->
+  </div>
+
+  <div class="discussion-form">
+    <input type="text" id="discussionInput" placeholder="Share your thoughts..." required>
+    <button id="postDiscussionButton">Post</button>
+  </div>
+</div>
+</div>
+
+<div class="leaderboard-section">
+  <div class="leaderboard-header">Leaderboard</div>
+  <div id="leaderboardList" class="leaderboard-list">
+    <!-- Sample Leaderboard Item -->
+    <div class="leaderboard-item">
+      <div class="rank">#1</div>
+      <div class="user-info">
+        <div class="user-name">Prachi Jain</div>
+        <!-- <div class="user-progress">90%</div> -->
+        <div class="user-points">Points: 950</div>
+      </div>
+      <!-- <div class="progress-bar"> -->
+        <!-- <div class="progress-fill" style="width: 90%;"></div> -->
+      <!-- </div> -->
+      <div class="badge">
+        <span class="badge-text">Gold</span>
+      </div>
+    </div>
+    <!-- More leaderboard items will be appended here -->
+    <div class="leaderboard-item">
+      <div class="rank">#2</div>
+      <div class="user-info">
+        <div class="user-name">Akshat Jain</div>
+        <!-- <div class="user-progress">80%</div> -->
+        <div class="user-points">Points: 820</div>
+      </div>
+      <!-- <div class="progress-bar"> -->
+        <!-- <div class="progress-fill" style="width: 80%;"></div> -->
+      <!-- </div> -->
+      <div class="badge">
+        <span class="badge-text">Silver</span>
+      </div>
+    </div>
+    <div class="leaderboard-item">
+      <div class="rank">#3</div>
+      <div class="user-info">
+        <div class="user-name">Charlie Brown</div>
+        <!-- <div class="user-progress">70%</div> -->
+        <div class="user-points">Points: 700</div>
+      </div>
+      <!-- <div class="progress-bar"> -->
+        <!-- <div class="progress-fill" style="width: 70%;"></div> -->
+      <!-- </div> -->
+      <div class="badge">
+        <span class="badge-text">Bronze</span>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="achievements-section">
+          <h2>Achievements</h2>
+          <div class="achievement-item">
+            <button class="achievement-button">
+              <i data-lucide="trophy" class="trophy-icon"></i>
+              <div>
+                <h3>Download Certificate</h3>
+                <p>Complete all videos to earn a certificate</p>
+              </div>
+            </button>
+          </div>
+          
+          <div class="achievement-item">
+            <button class="achievement-button">
+              <i data-lucide="award" class="award-icon"></i>
+              <div>
+                <h3>Active Learner</h3>
+                <p>Take notes and participate in discussions</p>
+              </div>
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById('generateQuestionsButton').addEventListener('click', () => {
+      const questionsList = document.getElementById('questionsList');
+      questionsList.innerHTML = `
+        <div class="mcq-question">
+          <p>Which framework is used in the video?</p>
+          <ul class="options">
+            <li><input type="radio" name="framework" id="optionA" value="React">
+            <label for="optionA">React</label></li>
+            <li><input type="radio" name="framework" id="optionB" value="Angular">
+            <label for="optionB">Angular</label></li>
+            <li><input type="radio" name="framework" id="optionC" value="Vue">
+            <label for="optionC">Vue</label></li>
+            <li><input type="radio" name="framework" id="optionD" value="Svelte">
+            <label for="optionD">Svelte</label></li>
+          </ul>
+          <button class="submit-answer-button">Submit Answer</button>
+        </div>
+      `;
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
