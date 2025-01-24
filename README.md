@@ -8,19 +8,19 @@ Features
 
 Main Features
 
-Video Player: Embedded YouTube videos with navigation for course content.
+👨‍💻 Video Player: Embedded YouTube videos with navigation for course content.
 
-Course Progress Tracking: Displays progress visually with a dynamic progress bar.
+🎓 Course Progress Tracking: Displays progress visually with a dynamic progress bar.
 
-Interactive Exercises: Allows users to drag and drop to reorder course priorities.
+💻 Interactive Exercises: Allows users to drag and drop to reorder course priorities.
 
-Note-Taking: Rich text editing for taking notes during the course.
+🚀 Note-Taking: Rich text editing for taking notes during the course.
 
-AI-Generated Questions: Generate questions for self-assessment.
+📝 AI-Generated Questions: Generate questions for self-assessment.
 
-Rating System: Users can rate the course on a 5-star scale.
+🔍 Rating System: Users can rate the course on a 5-star scale.
 
-Achievements: Unlockable badges for completing milestones.
+🤝 Achievements: Unlockable badges for completing milestones.
 
 Additional Features
 
@@ -34,10 +34,10 @@ Dynamic Certificate Generation: Downloadable certificate upon course completion.
 
 Technologies Used
 
-HTML5: Markup for structuring the content.
+🌟 HTML5: Markup for structuring the content.
 
-CSS3: Styling for responsive and aesthetic design.
+🌟 CSS3: Styling for responsive and aesthetic design.
 
-JavaScript: Interactivity and dynamic content rendering.
+🌟 JavaScript: Interactivity and dynamic content rendering.
 
 Lucide Icons: Lightweight and scalable vector icons.
