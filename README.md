@@ -1,4 +1,4 @@
-Creative Course Page
+Frontend Developer Essential Course!
 
 Project Overview
 
